@@ -321,3 +321,53 @@
         text-align: right;
     }
 }
+
+/* ==== ==== ==== ==== ==== */
+.category {
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__item {
+        padding: 4rem;
+        
+        display: flex;
+        align-items: flex-end;
+
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &--first {
+            background-image: url("../files/image/third__section__1.jfif");
+        }
+
+        &--second {
+            background-image: url("../files/image/third__section__2.jfif");
+        }
+    }
+
+    &__link {
+        position: relative;
+
+        font-size: 1.2em;
+        line-height: (19 / 12) * 100%;
+        letter-spacing: 1.2px;
+        color: $font-main;
+
+        &::after {
+            content: "";
+
+            width: 100%;
+            height: 1px;
+
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+
+            background-color: $font-main;
+        }
+    }
+}
