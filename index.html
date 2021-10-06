@@ -6,20 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashley&Co (desktop)</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
     <div class="page">
         <header class="header">
             <div class="navbar">
-                <div class="logo">
+                <a class="logo" href="index.html">
                     <img class="logo__image" src="img/logo.svg" alt="">
-                </div>
-                <a class="cart" href="#cart">Cart (<span class="cart__number">0</span>)</a>
+                </a>
+                <div class="navbar__action">
+                    <a class="cart" href="#cart">Cart (<span class="cart__number">0</span>)</a>
                 <button class="menu-button">
                     <span class="menu-button__line"></span>
                     <span class="menu-button__line"></span>
                 </button>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">section</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">section</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">section</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">section</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">section</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main class="main">
@@ -197,7 +219,7 @@
             </div>
         </footer>
     </div>
-    
+
     <script src="js/main.js"></script>
 </body>
 </html>
