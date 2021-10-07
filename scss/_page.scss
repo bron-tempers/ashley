@@ -474,3 +474,136 @@
         }
     }
 }
+
+/* ==== ==== ==== ==== ==== */
+.good {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../files/image/sixth__section.jfif");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &__content {
+        padding-top: 12rem;
+        padding-left: 4rem;
+    }
+
+    &__text-content {
+        max-width: 33rem;
+    }
+
+    &__heading {
+        margin-bottom: 1rem;
+
+        font-size: 1.5em;
+        line-height: (19 / 15) * 100%;
+        letter-spacing: 0.5px;
+        color: $font-main;
+    }
+
+    &__title {
+        margin-bottom: 4rem;
+
+        font-size: 2.5em;
+        line-height: (32 / 25) * 100%;
+        letter-spacing: 0.5px;
+        color: $font-main;
+    }
+    
+    &__text {
+        margin-bottom: 2.2rem;
+        
+        font-size: 1.6em;
+        line-height: (19 / 16) * 100%;
+        letter-spacing: 0.5px;
+        color: $font-main;
+    }
+
+    &__link {
+        position: relative;
+
+        font-size: 1.2em;
+        line-height: (19 / 12) * 100%;
+        letter-spacing: 1.2px;
+        color: $font-main;
+
+        &::after {
+            content: "";
+
+            width: 100%;
+            height: 1px;
+
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+
+            background-color: $font-main;
+        }
+    }
+}
+
+/* ==== ==== ==== ==== ==== */
+.footer {
+    padding: 3rem 0;
+
+    background-color: $footer-back;
+
+    &__content {
+        padding: 0 4rem;
+    }
+
+    &__heading {
+        margin-bottom: 2.1rem;
+        
+        font-size: 1.4em;
+        line-height: (19 / 14) * 100%;
+        letter-spacing: 0.5px;
+        color: $font-footer;
+    } 
+}
+
+.subscribe {
+    padding-top: 2.5rem;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__input {
+        max-width: 28rem;
+        height: 2.8rem;
+        padding: 0;
+
+        border: none;
+        border-top: 1px solid $font-footer;
+
+        outline: none;
+        background-color: transparent;
+
+        font-size: 1.4em;
+        line-height: (19 / 14) * 100%;
+        letter-spacing: 0.5px;
+        color: $font-footer;
+
+        &::placeholder {
+            color: $font-footer;
+        }
+    }
+
+    &__submit {
+        border: none;
+        padding: 0;
+
+        background-color: transparent;
+        cursor: pointer;
+
+        font-size: 1.2em;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: $font-footer;
+    }
+}
